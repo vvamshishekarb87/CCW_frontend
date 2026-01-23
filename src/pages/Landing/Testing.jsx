@@ -173,23 +173,23 @@ const Testing = () => {
 
       {/* CENTER NAV — DESKTOP ONLY */}
       <nav className="hidden sm:flex items-center gap-6 md:gap-10 lg:gap-16 flex-1 justify-center text-sm md:text-base lg:text-lg font-medium text-[#555555]">
-        <Link to="/login" className="hover:text-[#51218F] transition">How it works</Link>
-        <Link to="/login" className="hover:text-[#51218F] transition">For creators</Link>
-        <Link to="/login" className="hover:text-[#51218F] transition">For talents</Link>
+        <Link to="/signup" className="hover:text-[#51218F] transition">How it works</Link>
+        <Link to="/signup" className="hover:text-[#51218F] transition">For creators</Link>
+        <Link to="/signup" className="hover:text-[#51218F] transition">For talents</Link>
       </nav>
 
       {/* RIGHT: Buttons — DESKTOP ONLY */}
       <div className="hidden sm:flex items-center gap-3 md:gap-4">
         <button
-          onClick={() => navigate("/signupac")}
-          className="px-5 py-2.5 text-sm md:text-base font-semibold text-[#51218F] bg-white border border-[#51218F] rounded-full"
+          onClick={() => navigate("/signup")}
+          className="px-5 py-2.5 text-sm md:text-base font-semibold text-[#51218F] bg-white border border-[#51218F] rounded-full cursor-pointer"
         >
           Sign Up
         </button>
 
         <button
           onClick={() => navigate("/login")}
-          className="px-6 py-2.5 text-sm md:text-base font-medium text-white bg-gradient-to-r from-[#51218F] to-[#170929] rounded-full"
+          className="px-6 py-2.5 text-sm md:text-base font-medium text-white bg-gradient-to-r from-[#51218F] to-[#170929] rounded-full cursor-pointer"
         >
           Login
         </button>
