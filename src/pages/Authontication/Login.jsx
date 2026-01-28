@@ -138,7 +138,33 @@ const Login = () => {
       />
 
       <div className="relative w-screen h-screen flex justify-center items-center p-4 sm:p-6 md:p-8">
-        <div className="w-full max-w-[652px] min-h-[579px] rounded-[32px] border-[1.5px] border-white bg-white/70 shadow-[0_0_10px_0_#FFFFFF] flex flex-col items-center justify-center gap-6 p-6 sm:p-8 md:p-10">
+        <div className="relative w-full max-w-[652px] min-h-[579px] rounded-[32px] border border-white bg-white/70 shadow-[0_0_10px_0_#FFFFFF] flex flex-col items-center justify-center p-6 sm:p-8">
+
+         {/* 🔙 BACK BUTTON */}
+          <div
+            className="absolute top-4 left-4 sm:top-6 sm:left-6 cursor-pointer z-10"
+            onClick={() => navigate("/")}
+          >
+            <div
+              className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full hover:scale-105 active:scale-95 transition"
+              style={{
+                background:
+                  "linear-gradient(180deg, rgba(3,3,3,0.9) 0%, rgba(81,33,143,0.9) 100%)",
+                backdropFilter: "blur(12px)",
+              }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 sm:h-5 sm:w-5 text-white"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+              </svg>
+            </div>
+          </div>
 
           <div className="w-full max-w-[556px] flex flex-col gap-3">
 
