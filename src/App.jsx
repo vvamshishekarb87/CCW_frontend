@@ -45,7 +45,7 @@ import CreatorEditProfile from "./pages/AfterSignHome/CreatorEditProfile";
 import Finder from "./pages/Finder/Finder";
 import UserList from "./pages/Finder/UserList";
 import FinderProfile from "./pages/Finder/FinderProfile";
-import Profile from "./pages/Finder/Profile";
+
 
 import ColHome from "./pages/AfterSignCol/ColHome";
 import Subscription from "./pages/Subscription/Subscription";
@@ -134,7 +134,7 @@ export default function App() {
         <Route path="/finder" element={<Finder />} />
         <Route path="/user-list" element={<UserList />} />
         <Route path="/finder-profile" element={<FinderProfile />} />
-        <Route path="/pro-file" element={<Profile />} />
+        
 
         {/* collaberator */}
         <Route path="/col-home" element={<ColHome />} />
