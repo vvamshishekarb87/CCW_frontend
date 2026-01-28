@@ -86,6 +86,7 @@ const JobCreated = () => {
   return (
     <div className="w-full min-h-screen flex flex-col overflow-x-hidden relative bg-gray-50">
       <section className="w-full flex flex-col items-center justify-start px-4 relative min-w-0">
+        
         {/* Background Image */}
         <div
           className="absolute top-[-104px] left-0 w-full h-[382px] md:h-[582px] z-0"
@@ -108,6 +109,7 @@ const JobCreated = () => {
             Welcome back,<br className="sm:hidden" /> Pradeep
           </h1>
         </div>
+        
 
         <Header />
 
@@ -121,8 +123,9 @@ const JobCreated = () => {
         ">
           {/* ==================== MAIN CONTENT (LEFT on desktop) ==================== */}
           <main className="w-full lg:w-[780px] xl:w-[860px] flex flex-col gap-5 lg:gap-6 order-2 lg:order-1">
-            {/* Job Posted Card */}
-           <div className="w-full rounded-[8px] bg-white shadow-md p-4 max-[420px]:p-3">
+{/* Job Posted Card */}
+<div className="w-full rounded-[8px] bg-white shadow-md p-4 max-[420px]:p-3 lg:mt-6">
+
   <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-3 max-[420px]:mb-2">
     <h3 className="font-semibold text-[15px] max-[420px]:text-[13px] sm:text-[16px] lg:text-[18px] text-[#2A1E17]">
       Your Had Posted a Job
@@ -369,6 +372,27 @@ const JobCreated = () => {
               <SavedDraft />
             )}
           </main>
+
+{/* ==================== MOBILE FIND COLLABORATOR BUTTON ==================== */}
+<div className="lg:hidden w-full flex justify-center relative z-30 -mt-[26px] mb-4">
+
+  <button
+    onClick={() => navigate("/finder")}
+    className="
+      px-10
+      h-[46px]
+      rounded-full
+      bg-[#5B2AAE]
+      text-white
+      font-semibold
+      text-[15px]
+      shadow-xl
+    "
+  >
+    Find collaborator
+  </button>
+</div>
+
 
           {/* ==================== RIGHT SIDEBAR (Desktop only) ==================== */}
           <aside className="
